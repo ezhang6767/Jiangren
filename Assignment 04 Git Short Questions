@@ -1,0 +1,38 @@
+1. The content of second.md should be:
+A B $ C # % E F
+
+2. True
+
+3. False
+
+git reset can also be used to:
+Remove files from the staging area (e.g., git reset <file>).
+Move the HEAD pointer and reset the working directory to a specific commit (e.g., git reset --soft, git reset --hard).
+
+git reset: Can undo commits and remove files from the staging area.
+git revert: Only undoes commits (by creating new commits).
+
+4. True
+git checkout <commit-hash>
+
+5. False
+git commit -a -m "Commit changes directly without staging"
+
+6. False
+git log only shows commit metadata.
+git log -p includes the metadata and the changes (diff/patches) made in each commit.
+
+7. Fasle
+git log --oneline gives a simplified, single-line summary of commits.
+git log --stat provides detailed information about file changes and statistics for each commit.
+
+8. True
+
+The statement is True because:
+
+git revert is safer than git reset in most cases, particularly in collaborative workflows, as it avoids rewriting history and does not risk losing work.
+git reset should be used cautiously, primarily for local changes or in isolated environments.
+
+
+git revert	When you need to undo a commit without rewriting history (collaborative repositories).
+git reset	When you want to completely undo changes locally and rewrite history (e.g., before pushing).
